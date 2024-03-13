@@ -2,11 +2,11 @@
 
 ## Install
 
-Simply run `npm install`
+run `npm install`
 
 ## Develop
 
-Run `npm run dev` and open `http://localhost:3000`.
+run `npm run dev` and open `http://localhost:3000`.
 
 ## About
 
