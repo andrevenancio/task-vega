@@ -1,0 +1,3 @@
+{
+  "extends": "@vega/config-typescript/base.json"
+}

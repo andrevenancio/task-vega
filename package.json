@@ -1,0 +1,27 @@
+{
+  "name": "dashboard",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf --glob \"{apps,packages}/**/{node_modules,build,.turbo,.next}\" ./node_modules yarn.lock",
+    "build": "dotenv turbo run build",
+    "dev": "dotenv -- turbo dev -v",
+    "start": "dotenv -- turbo start",
+    "lint": "dotenv -- turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "pull-env": "vercel env pull .env",
+    "pull-env:production": "vercel env pull --environment=production .env"
+  },
+  "devDependencies": {
+    "@vega/config-typescript": "*",
+    "dotenv-cli": "latest",
+    "eslint": "^8.48.0",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.5",
+    "turbo": "^1.11.2"
+  },
+  "packageManager": "npm@10.2.3",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

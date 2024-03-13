@@ -1,0 +1,9 @@
+{
+  "name": "@vega/config-typescript",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  }
+}

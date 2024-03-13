@@ -1,0 +1,38 @@
+// Inspired from https://www.youtube.com/watch?v=eJXVEju3XLM
+{
+  "compilerOptions": {
+    /* Base Options */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    // "verbatimModuleSyntax": true, // TODO: Should be enabled, TBD
+    "allowJs": true,
+    // "moduleDetection": "force", // TODO: Should be enabled, TBD
+    "forceConsistentCasingInFileNames": true,
+    "composite": false, // TODO: Should probably be true, TBD
+    // "incremental": true, // TODO: Should probably be enabled, TBD
+    "isolatedModules": true, // TODO: What is this for? TBD
+    "noUnusedLocals": false, // TODO: Should probably be removed, TBD
+    "noUnusedParameters": false, // TODO: Should probably be removed, TBD
+
+    /* Strictness */
+    "strict": true,
+    // "noUncheckedIndexedAccess": true, // TODO: Should probably be enabled, TBD
+    "strictPropertyInitialization": false, // TODO: Should probably be enabled, TBD
+
+    /* Typescript */
+    "moduleResolution": "Bundler",
+    "module": "ESNext",
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    /* Library and types */
+    "lib": ["ESNext", "dom", "dom.iterable"],
+    "types": ["node"],
+
+    /* Misc */
+    "preserveWatchOutput": true
+  },
+  "exclude": ["**/node_modules/**", "**/build/**"]
+}
